@@ -17,3 +17,6 @@ The website runs on a Flask framework. It is currently under construction. More 
 ### Color Schemes Options
 https://www.schemecolor.com/underworld-empire.php (need mod)
 https://www.schemecolor.com/perth-city-flag-colors.php
+
+## Current Page Screenshots
+![img.png](img.png)

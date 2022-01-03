@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #760f0f;
+  color: #dddddd;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #262626;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: #dddddd;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* AIChE on Right */
+.aiche_right {
+  flex: 50%;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+/*TODO adjust colors to match color scheme*/
+/* Cheme car on Left */
+.cheme_car_left {
+  flex: 70%;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #d4d4d4;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* TODO FIX the text on this page, update */
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Rensselaer AIChE</h1>
+  <p>The American Institute of Chemical Engineers at RPI</p>
+</div>
+
+<div class="navbar">
+  <a href="events">Events</a>
+  <a href="officers">Officers</a>
+  <a href="resources">Resources</a>
+  <a href="about" class="right">About</a>
+</div>
+
+<div class="row">
+  <div class="aiche_right">
+    <h2>AIChE</h2>
+      <p>The <a href="aiche.com"> American Institute of Chemical Engineers (AIChE) </a> is a national organization
+          with the mission to "promote excellence in the development and practice of chemical engineering." Its
+          membership consists of five grades - Student, Affiliate, Associate, Member and Fellow, ranging from
+          undergraduate students to professors, professional engineers to executive officers in major corporations.
+          Check out the site to learn more about the RPI Chapter and how you can join.
+      </p>
+
+  </div>
+  <div class="cheme_car_left">
+    <h2>ChemE Car</h2>
+    <p>Chem-E-Car is a competition hosted by the AIChE. RPI Chem-E-Car competes annually at the Northeast Regional
+        Conference. We have made a few appearances at the Annual Student Conference to compete against universities
+        from all over the world. Check out more info under CHEM-E-CAR tab! </p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+    Copyright ©RPI Chapter of the AIChE. All Rights Reserved.
+Contact Webmaster
+Last Modified: 3/25/2021
+</div>
+
+</body>
+</html>

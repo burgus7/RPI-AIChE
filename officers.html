@@ -27,6 +27,10 @@ body {
   font-size: 40px;
 }
 
+p {
+  font-size: 15px;
+}
+
 /* Style the top navigation bar */
 .navbar {
   overflow: hidden;
@@ -54,55 +58,35 @@ body {
   color: black;
 }
 
-/* Column container */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-/*TODO move sidebar to left*/
-/*TODO adjust colors to match color scheme*/
-/* Main column */
-.main {
-  flex: 70%;
-  background-color: #ffffff;
-  padding: 20px;
-}
-
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #d4d4d4;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Speaker box */
-.speaker {
-  background-color: #cbcbcb;
-  width: 90%;
-  padding: 20px;
-}
-
-/* Post box */
-.post {
-  background-color: #cbcbcb;
-  width: 90%;
-  padding: 20px;
-}
-
 /* Footer */
 .footer {
   padding: 20px;
   text-align: center;
   background: #ddd;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23% ;
+  gap: 2%;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.group-photo {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
@@ -118,7 +102,12 @@ body {
     width:100%;
   }
 }
+
+
 </style>
+
+
+
 </head>
 <body>
 
@@ -136,7 +125,43 @@ body {
 </div>
 
 <div class="row">
-    <h2>SITE UNDER CONSTRUCTION</h2>
+  <h2>Fall 2022</h2>
+  <div class="grid-container">
+    <div class="grid-item">
+      <p>President</p>
+      <img src="/officer_profile_pictures/wolfgang.jpeg" alt="The Honorable President" width="100%">
+      <p>Wolfgang Mueller</p>
+    </div>
+    <div class="grid-item">
+      <p>Vice President</p>
+      <img src="/officer_profile_pictures/wolfgang.jpeg" alt="The Honorable President" width="100%">
+      <p>Wolfgang Mueller</p>
+    </div>
+    <div class="grid-item">
+      <p>Professional Relations Coordinator</p>
+      <img src="/officer_profile_pictures/wolfgang.jpeg" alt="The Honorable President" width="100%">
+      <p>Wolfgang Mueller</p>
+    </div>
+    <div class="grid-item">
+      <p>Treasurer</p>
+      <img src="/officer_profile_pictures/wolfgang.jpeg" alt="The Honorable President" width="100%">
+      <p>Wolfgang Mueller</p>
+    </div>
+    <div class="grid-item">
+      <p>Secretary</p>
+      <img src="/officer_profile_pictures/wolfgang.jpeg" alt="The Honorable President" width="100%">
+      <p>Wolfgang Mueller</p>
+    </div>
+    <div class="grid-item">
+      <p>Webmaster</p>
+      <img src="/officer_profile_pictures/wolfgang.jpeg" alt="The Honorable President" width="100%">
+      <p>Wolfgang Mueller</p>
+    </div>
+
+
+
+
+  </div>
 </div>
 
 <div class="footer">

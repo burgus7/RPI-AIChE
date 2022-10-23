@@ -8,8 +8,6 @@ as community for chemical engineers to connect and network. This repo serves as 
 website is maintained by chemical engineers at RPI. 
 
 ## The Code
-The website runs on a Flask framework. It is currently under construction. More documentation will come soon. 
-
 
 ## References
 <a> https://www.w3schools.com/howto/howto_make_a_website.asp </a>
@@ -18,5 +16,3 @@ The website runs on a Flask framework. It is currently under construction. More 
 https://www.schemecolor.com/underworld-empire.php (need mod)
 https://www.schemecolor.com/perth-city-flag-colors.php
 
-## Current Page Screenshots
-![img.png](img.png)
